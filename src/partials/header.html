@@ -1,0 +1,71 @@
+<section class="section header">
+  <div class="container header-container">
+    <a href="#" class="logo">Mobileapp</a>
+    <nav id="home" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#home">HOME</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#features">FEATURES</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#team">TEAM</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#testimonials">TESTIMONIALS</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="burger-open menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      aria-label="Open Mobile Menu"
+    >
+      <svg class="icon icon-button-burger-open" width="16" height="14">
+        <use
+          xlink:href="../src/images/sprite.svg#icon-button-burger-open"
+        ></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="mobile-header">
+      <a href="#" class="logo logo-mobile">Mobileapp</a>
+
+      <button
+        class="button-close-burger menu-toggle js-close-menu"
+        aria-label="Close Mobile Menu"
+      >
+        <svg class="icon icon-button-close" width="32" height="32">
+          <use xlink:href="../src/images/sprite.svg#icon-button-close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list js-menu-links">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link mobile-menu__link--current" href="#home"
+          >HOME</a
+        >
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#features">FEATURES</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#team">TEAM</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#testimonials">TESTIMONIALS</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#contact">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</section>

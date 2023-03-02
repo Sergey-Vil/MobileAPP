@@ -1,0 +1,10 @@
+.burger-open {
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

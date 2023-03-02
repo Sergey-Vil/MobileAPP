@@ -1,0 +1,104 @@
+<section class="hero">
+  <div class="container hero-container">
+    <div class="hero-list">
+      <h1 class="hero__title-first">Introducing Mobileapp</h1>
+
+      <h2 class="hero__title-second">Maecenas vitae tellus sapien. Prasent</h2>
+
+      <ul class="hero__list">
+        <li class="hero__item hero-icon">
+          semper scelerisque tristique a enim
+        </li>
+        <li class="hero__item hero-icon">
+          Integer ut mattis nulla, eget vehicula elit
+        </li>
+        <li class="hero__item hero-icon">Prasent rutrum ac nunc et</li>
+      </ul>
+
+      <div class="btn-box-open">
+        <button data-modal-open type="button" class="btn-download">
+          Download
+        </button>
+      </div>
+      <div class="hero-images">
+        <div class="box-decor">
+          <picture class="hero-images__decor">
+            <source
+              srcset="
+                /src/images/hero/hero-decor-tablet.png    1x,
+                /src/images/hero/hero-decor-tablet@2x.png 2x
+              "
+              media="(width: 768px)"
+              data-speed="-3"
+              class="layer"
+            />
+
+            <source
+              srcset="
+                /src/images/hero/hero-decor-dt.png    1x,
+                /src/images/hero/hero-decor-dt@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              data-speed="-3"
+              class="layer"
+            />
+
+            <img
+              src="/src/images/hero/hero-decor-tablet.png"
+              alt="decor"
+              data-speed="-3"
+              class="layer"
+            />
+          </picture>
+        </div>
+
+        <div class="box-phone">
+          <picture class="hero-images__telephone">
+            <source
+              srcset="
+                /src/images/hero/hero-iphone-dt.png    1x,
+                /src/images/hero/hero-iphone-dt@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+              data-speed="2"
+              class="layer"
+            />
+
+            <source
+              srcset="
+                /src/images/hero/hero-iphone-tablet.png    1x,
+                /src/images/hero/hero-iphone-tablet@2x.png 2x
+              "
+              media="(min-width: 768px)"
+              type="image/png"
+              data-speed="2"
+              class="layer"
+            />
+
+            <img
+              src="/src/images/hero/hero-iphone-tablet.png"
+              alt="iphone"
+              data-speed="2"
+              class="layer"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  document.addEventListener('mousemove', parallax);
+  function parallax(e) {
+    this.querySelectorAll('.layer').forEach(layer => {
+      const speed = layer.getAttribute('data-speed');
+
+      const x = (window.innerWidth - e.pageX * speed) / 100;
+      const y = (window.innerHeight - e.pageY * speed) / 100;
+
+      layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  }
+</script>

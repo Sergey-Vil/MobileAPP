@@ -1,0 +1,18 @@
+@import '/node_modules/modern-normalize/modern-normalize.css';
+// @import '/node_modules/swiper/swiper-bundle.css';
+@import './utils/variables';
+@import './utils/global';
+@import './components/logo';
+@import './layout/header';
+@import './components/nav';
+@import './components/mobile-menu';
+@import './components/button-burger-open';
+@import './components/button-close-burger';
+@import './layout/hero';
+@import './components/backdrop-modal';
+@import './layout/features';
+@import './layout/video';
+@import './layout/team';
+@import './layout/testimonials';
+@import './layout/contacts';
+@import './layout/footer';

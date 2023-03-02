@@ -1,0 +1,30 @@
+.nav__list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav__item {
+  padding: 24px 0 23px 0;
+}
+
+.nav__link {
+  color: $color-second;
+
+  font-size: 12px;
+  line-height: 1.25;
+
+  @media screen and (min-width: $tablet) {
+    &:hover,
+    &:focus {
+      background: $gradient-button;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}

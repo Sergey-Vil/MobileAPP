@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/src/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/src/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/src/favicon-16x16.png"
+    />
+
+    <title>Mobileapp</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/modal.html"></include>
+    <include src="./partials/features.html"></include>
+    <include src="./partials/video.html"></include>
+    <div class="bg-double">
+      <include src="./partials/team.html"></include>
+      <include src="./partials/testimonials.html"></include>
+    </div>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <script src="/src/js/mobile-menu.js" type="modul"></script>
+    <script src="/src/js/modal.js" type="modul"></script>
+    <script src="/src/js/modal-video.js" type="modul"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <svg class="gradient">
+      <linearGradient
+        id="gradient"
+        x1="-0.796875"
+        y1="14.4443"
+        x2="35.7839"
+        y2="14.4619"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#00C5EB" />
+        <stop offset="1" stop-color="#B544FE" />
+      </linearGradient>
+    </svg>
+  </body>
+</html>

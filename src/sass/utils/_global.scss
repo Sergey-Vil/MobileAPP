@@ -1,0 +1,42 @@
+body {
+  color: $color-premier;
+  font-family: $font-family-premier;
+  font-size: 14px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  width: 100%;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
